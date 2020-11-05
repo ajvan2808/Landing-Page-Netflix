@@ -1,0 +1,191 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <link rel="stylesheet" href="Landing Page.css"> 
+  <head> 
+    <title>A Netflix Landing Page</title>
+  </head>
+<link 
+      rel="stylesheet"   href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+  crossorigin="anonymous"
+/>
+  
+<div class="page-wrapper">
+  <div class="hero">
+  <header id="header">
+    <img id="header-img" 
+                    src="https://pmcvariety.files.wordpress.com/2020/05/netflix-logo.png?w=600" 
+         alt="Page Logo"/>     
+  <nav id="nav-bar">
+    <ul>
+      <li> <button> 
+        <a class="nav-link" href="#form">Sign Up</a></button></li> 
+      <li> <button>
+        <a class="nav-link" href="#features"
+           >Why Netflix</a></button></li> 
+      <li> <button>
+        <a class="nav-link" href="#membership">Membership Plans</a></button></li> 
+    </ul> 
+  </nav>
+  </header>
+   
+ <div id="form-decs">  
+
+  <h1>Unlimited movies, TV shows, and more.</h1>
+  <h3>Watch anywhere. Cancel anytime.
+<br />
+      Ready to watch? Enter your email to create or restart your membership.</h3>
+
+  
+  <form id="form" action="https://www.freecodecamp.com/email-submit">
+    <input 
+           name="email"
+           type="email"
+           id="email"
+           placeholder="Enter your email address" required />
+    <input 
+           id="submit"
+           type="submit"
+           value="Get Started"/> 
+  </form>
+  </div> 
+  </div>
+  
+ <div class="container">
+   <section id="features">
+     <div class="grid">
+       <div class="icon">
+         <img id="icon-img-tv"
+              src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" 
+              alt="Watch on multiple devices"/>
+        <div id="icon-img-tv-video-card">
+          <video class="icon-img-tv-video" autoplay> 
+            <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v"
+                    type="video/mp4"> 
+          </video>
+        </div>
+        </div>
+       
+        <div class="desc">
+         <h2>Enjoy on your TV.</h2>
+         <p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+       </div>
+     </div> 
+     
+   <div class="grid">
+     <div class="icon">
+       <img id="icon-img-mobile"
+            src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg" alt="Download to your devices" /> </div>
+     
+     <div class="desc">
+       <h2>Download your shows to watch offline.</h2>
+       <p>Save your favorites easily and always have something to watch.</p>
+     </div>
+   </div>
+   
+   <div class="grid">
+     <div class="icon">
+       <img id="icon-img-devices"
+            src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png" alt="Watch Everywhere"/>
+      
+      <div id="icon-img-devices-video-card">
+              <video class="icon-img-devices-video" autoplay> 
+                <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices.m4v"
+                        type="video/mp4"> 
+              </video>
+      </div>
+    </div>
+    
+     <div class="desc">
+       <h2>Watch everywhere.</h2>
+       <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV without paying more.</p> 
+     </div>
+     </div> 
+   </section> 
+
+<section class="latest-premiere">
+  <iframe 
+    width="560" height="315" src="https://www.youtube.com/embed/0UzbqXrrW3A" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen> </iframe>
+</section> 
+
+<section id="membership">
+  <div class="membership-plans-title">
+    <h3>Choose the plan that is right for you.</h3>
+    <p>Downgrade or upgrade at any time.</p>
+  </div> 
+<div id="membership-plans">
+ <div class="plans" id="basic">
+    <div class="level">Basic</div>
+    <ul>
+      <li><b>Good video quality</b></li>
+      <li><b>480p</b></li>
+      <li><b>1 Screen active</b></li>
+      <li>Watch on your laptop, TV, phone and tablet.</li>
+      <li>Unlimited movies and TV shows.</li>
+      <li>Cancel anytime.</li>
+    </ul>
+   
+   <button class="btn">180.000&#8363;/month</button>
+ </div> 
+  
+ <div class="plans" id="standard">
+   <div class="level">Standard</div>
+   <ul>
+     <li><b>Better video quality</b></li>
+     <li><b>1080p</b></li>
+     <li><b>2 Screens active</b></li>
+     <li>Watch on your laptop, TV, phone and tablet.</li>
+      <li>Unlimited movies and TV shows.</li>
+      <li>Cancel anytime.</li>
+   </ul>
+   
+   <button class="btn">220.000&#8363;/month</button>
+ </div>
+  
+ <div class="plans" id="premium">
+   <div class="level">Premium</div>
+   <ul>
+     <li><b>Best video quality</b></li>
+     <li><b>4K+ HRD</b></li>
+     <li><b>4 Screens active</b></li>
+     <li>Watch on your laptop, TV, phone and tablet.</li>
+      <li>Unlimited movies and TV shows.</li>
+      <li>Cancel anytime.</li>
+   </ul>
+   
+   <button class="btn">260.000&#8363;/month</button> 
+ </div>
+</div>
+   </section>
+   
+ <div class="site-footer">
+   <footer>
+     <p>
+   <a href="#">Contact Us.</a> </p>
+   <ul id="terms">
+     <li><a href="#">FAQ</a></li>
+     <li><a href="#">Privacy</a></li>
+     <li><a href="#">Terms</a></li>
+   </ul>
+   <span>Copyright 2016, Original Trombones</span> 
+   </footer>
+ </div>
+</html>
+  
+    
+  
+    
+         
+     
+     
+    
+         
+
+    
+                        
+          
+      
+    

@@ -1,0 +1,366 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+* { 
+  margin: 0;
+  padding: 0; 
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; 
+  font-size: 16px;
+  background-color: black; 
+  min-width: 320px;
+}
+
+header {
+  position: relative;
+  min-height: 60px;
+  display: flex;
+  top: 0; 
+  padding: 0 25px; 
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent; 
+  width: 100%;
+}
+
+@media (max-width:600px) {
+  header {
+    flex-wrap: wrap;
+  }
+}
+
+#page-wrapper {
+  position: relative;
+}
+
+#header-img {
+  height: 100px;
+  width: 20vw; 
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+}
+
+@media (max-width: 650px) {
+  #header-img {
+  width: 40%; 
+  height: 100px;
+  margin: 0 auto;
+  position: relative;
+  }
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none; 
+}
+
+nav {
+  font-weight: 500;
+}
+
+@media (max-width: 650px) {
+  nav {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+  }
+}
+
+nav li {
+  padding-bottom: 5px;
+}
+
+nav > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 30vw;
+}
+li > button {
+  background-color: #e50914;
+  border-radius: 3px;
+  border-style: none;
+  font-weight: 400;
+  padding: 7px 10px; 
+  font-size: .7rem;
+  margin-right: 5px;
+  cursor: auto;
+}
+
+@media (max-width: 650px) {
+  nav > ul {
+  flex-direction: column;
+    }
+}
+/* Style header and description form */ 
+#form-decs {
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  word-wrap: break-word;
+  height: 750px;
+  padding: 0 30px;
+}
+
+#form-decs h1, h3 {
+  margin-bottom: 40px;
+}
+#form-decs h1 {
+  font-size: 45px;
+}
+/* follow all the systax so the image can appear */ 
+#form-decs {
+  background-image: linear-gradient(to bottom,
+  rgba(0, 0, 0, .4),
+  rgba(0, 0, 0, .8)),
+  url(https://assets.nflxext.com/ffe/siteui/vlv3/69b9cce3-4fdc-4ed0-8825-9b24c97c3993/25d28ce7-3eae-4b28-a1b7-4bfb42663b6c/VN-vi-20201005-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
+  content: " ";
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  right: 0;
+  position: relative;
+  z-index: 0;
+  border-bottom: solid 8px rgb(66, 66, 66);
+}
+/* email and button form styling */ 
+#form input[type='email'] {
+  height: 45px;
+  width: 450px;
+  padding: 10px 10px;
+  box-sizing: border-box;
+  font: inherit;
+  margin-bottom: 30px;
+  border-radius: 2px;
+  border: solid 2px #8c8c8c;
+  display: flex;
+}
+
+#form input[type="submit"] {
+  background-color: #e50914;
+  color: white;
+  border-radius: 3px;
+  border-style: none;
+  font-weight: 400;
+  padding: 7px 17px; 
+  font-size: 1rem;
+  cursor: auto;
+  width: 40%;
+}
+
+#form input[type='submit']:hover {
+  background-color: #c50711;
+  width: 50%; 
+  height: 40px;
+  font-size: larger;
+  transition: background-color 1s;
+}
+/* grid styling inclunding */ 
+#features > .grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  height: 750px;
+  width: 100%;
+  border-bottom: solid 8px rgb(66, 66, 66);
+  margin-top: 50px;
+  padding: 0 30px;
+}
+
+@media (max-width: 550px) {
+  #features > .grid {
+    height: 100%;
+    margin: 0;
+    flex-direction: column;
+  }
+}
+
+#features > .icon, .desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  line-height: 2;
+}
+@media (max-width: 550px) {
+  #feature > .icon, .desc {
+    width: auto; 
+    font-size: 10px;
+    padding: 0;
+    text-align: center;
+  }
+}
+
+#icon-img-tv, #icon-img-mobile {
+  margin-bottom: 40px;
+}
+/* this one need more margin cuz the img top take more space */ 
+#icon-img-devices {
+  margin-top: 40px;
+}
+
+.desc > p {
+  font-size: larger;
+}
+.icon {
+  position: relative;
+} /* to set the video absolute position so it stick to the frame haha */
+
+.icon > #icon-img-tv-video-card {
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  max-width: 73%;
+  max-height: 54%;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  display: block;
+  transform: translate(-50%,-50%);
+}
+.icon > video {
+  display: inline-block;
+  vertical-align: baseline;
+  object-fit: cover;
+}
+
+.icon > #icon-img-devices-video-card {
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  max-width: 63%;
+  max-height: 47%;
+  top: 40%;
+  left: 50%;
+  position: absolute;
+  display: block;
+  transform: translate(-50%,-50%);
+}
+
+.icon-img-devices-video {
+  width: 100%; 
+}
+
+
+/* iframe styling */ 
+.latest-premiere {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* styling pricing frame */ 
+.membership-plans-title  h3 {
+  font-size: x-large;
+  margin-bottom: 0%;
+}
+
+.membership-plans-title {
+  text-align: center;
+  line-height: 1.5;
+  color: #c50711;
+  margin: 20px; 
+}
+@media (max-width: 550px) {
+  .membership-plans-title {
+    width: 100%;
+  }
+}
+
+#membership-plans {
+  display: flex;
+  flex-direction: row;
+  margin: 3rem;
+  justify-content: center;
+  line-height: 1.5;
+}
+@media (max-width: 800px) {
+  #membership-plans {
+    flex-direction: column;
+  }
+}
+
+.plans {
+  border: solid 2px #3d3838; 
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100% / 3);
+  margin: 2rem;
+}
+@media (max-width: 800px) {
+  .plans {
+  max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  } 
+}
+
+.plans > .level {
+  background-color: rgb(145, 141, 141);
+  color: black;
+  padding: 10px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.plans > ul > li {
+  padding: 5px 0;
+}
+
+.plans > button {
+  border: 0;
+  margin: 20px;
+  height: 2rem;
+  width: 40%;
+  font-size: small;
+  background-color: #c50711;
+  color: aliceblue;
+  font-weight: 400;
+}
+.plans > button:hover {
+  background-color: aliceblue;
+  color: #c50711;
+}
+
+footer {
+  margin-top: 8rem;
+  padding-left: 30px;
+}
+
+footer > ul {
+  display: flex;
+  justify-content: flex-start;
+  margin: 20px 0 30px; 
+}
+
+footer > ul > li {
+  padding-right: 20px;
+}
+
+footer > span {
+  display: flex;
+  justify-content: flex-start;
+  font-size: smaller;
+  color: #444;
+}
